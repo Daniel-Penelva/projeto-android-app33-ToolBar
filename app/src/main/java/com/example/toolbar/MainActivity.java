@@ -1,10 +1,13 @@
 package com.example.toolbar;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +30,32 @@ public class MainActivity extends AppCompatActivity {
         // Recebe como parâmetro o layout activity menu e o próprio menu que vem como parametro do onCreateOptionsMenu
          getMenuInflater().inflate(R.menu.menu_toolbar, menu);
          return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+
+            case R.id.search_menu:{
+                Toast.makeText(this, "Você clicou no Buscar", Toast.LENGTH_LONG).show();
+                break;
+            }
+            case R.id.cart_menu:{
+                Toast.makeText(this, "Você clicou no Carrinho", Toast.LENGTH_LONG).show();
+                break;
+            }
+            case R.id.config_menu:{
+                Toast.makeText(this, "Você clicou na Configurações", Toast.LENGTH_LONG).show();
+                break;
+            }
+            case R.id.about_menu:{
+                Toast.makeText(this, "Você clicou no Sobre", Toast.LENGTH_LONG).show();
+                break;
+            }
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
 

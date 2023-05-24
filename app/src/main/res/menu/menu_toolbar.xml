@@ -2,12 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="@string/title_menu_buscar" android:id="@+id/search_menu" app:showAsAction="always"/>
+    <item android:title="@string/title_menu_buscar" android:id="@+id/search_menu" app:showAsAction="always" android:icon="@drawable/ic_search"/>
 
-    <item android:title="@string/title_menu_carrinho" android:id="@+id/cart_menu" app:showAsAction="always"/>
+    <item android:title="@string/title_menu_carrinho" android:id="@+id/cart_menu" app:showAsAction="always" android:icon="@drawable/ic_shopping_cart"/>
 
     <item android:title="@string/title_menu_config" android:id="@+id/config_menu"/>
 
     <item android:title="@string/title_menu_sobre" android:id="@+id/about_menu"/>
+
+    <!-- showAsAction modifica a posição do ícone do menu.
+         icon vamos adicionar um icone adicionado do Vector Asset -->
 
 </menu>

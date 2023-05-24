@@ -9,6 +9,9 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- No theme do Toolbar o valor ThemeOverlay.AppCompat.Dark.ActionBar modifica o fundo do menu
+     para preto e as letras para branco -->
 
 </LinearLayout>

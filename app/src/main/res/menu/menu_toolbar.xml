@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/title_menu_buscar" android:id="@+id/search_menu"/>
+
+    <item android:title="@string/title_menu_carrinho" android:id="@+id/cart_menu"/>
+
+    <item android:title="@string/title_menu_config" android:id="@+id/config_menu"/>
+
+    <item android:title="@string/title_menu_sobre" android:id="@+id/about_menu"/>
+
+</menu>

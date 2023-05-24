@@ -19,3 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 }
+
+/* Criando um Android Resource File - vamos criar um arquivo de layout, no caso,
+ * um layout activity para o nosso menu. Vale Reealtar que no Resource Type vamos escolher a
+ * opção menu.
+ *
+ *  */
